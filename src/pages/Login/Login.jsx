@@ -10,7 +10,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let url = "${process.env.REACT_APP_API_URL}/login";
+    let url = `${process.env.REACT_APP_API_URL}/login`;
 
     const requestOptions = {
       method: "POST",

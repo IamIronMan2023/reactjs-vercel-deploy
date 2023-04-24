@@ -10,7 +10,7 @@ const EmployeeList = () => {
   useEffect(() => {
     const controller = new AbortController();
 
-    let url = "${process.env.REACT_APP_API_URL}/employees";
+    let url = `${process.env.REACT_APP_API_URL}/employees`;
 
     const requestOptions = {
       signal: controller.signal,
